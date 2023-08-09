@@ -5,14 +5,12 @@ confluent local services start
 
 -- To get into bash shell of different containers
 
-docker exec -i -t ee83539a5bfe bash
+docker exec -it broker bash
 
 ------------------------
 To create topic
 
 kafka-topics --create --topic airline-topic --bootstrap-server localhost:9092 --replication-factor 1 
-
-
 
 
 -----------------------------
