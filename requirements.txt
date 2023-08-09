@@ -1,3 +1,4 @@
 kafka-python
 pandas
 jupyter
+pyspark
