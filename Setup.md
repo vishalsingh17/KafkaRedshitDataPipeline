@@ -44,17 +44,79 @@ kafka-console-consumer --topic airline-topic --bootstrap-server localhost:9092 -
 kafka-console-consumer --topic airline-shink --bootstrap-server localhost:9092 --from-beginning
 ```
 
+11. Setup Redshift
+
+[Redshift Setup](https://github.com/vishalsingh17/KinesisRedshiftDataPipeline/blob/main/AWS%20SET%20UP/5%20--%20AWS%20redshift%20Creation.docx)
+
+12. Create DB in Redshift
+```sql
+Create database test_data
+```
+
+13. Create table in Redshift
+```sql
+CREATE TABLE emp(
+
+   emp_id int, 
+
+   emp_name varchar (255),
+
+   emp_city varchar (255),
+
+   emp_sal int,
+
+   emp_phone int
+
+   )
+
+```
+
+14. View the table
+```sql
+select * from emp;
+```
+
+15. Insert Data into table
+```sql
+INSERT INTO emp (emp_id, emp_name, emp_city,
+
+   emp_phone, emp_sal) VALUES(1,'ram', 'Hyderabad', 7348, 50000);
 
 
 
+INSERT INTO emp (emp_id, emp_name, emp_city,
+
+   emp_phone, emp_sal) VALUES(2,'robin', 'Hyderabad', 9843, 40000);
 
 
 
+INSERT INTO emp (emp_id, emp_name, emp_city,
+
+   emp_phone, emp_sal) VALUES(3,'amit', 'Hyderabad', 9848, 25000);
 
 
 
+INSERT INTO emp (emp_id, emp_name, emp_city,
+
+   emp_phone, emp_sal) VALUES(4,'nikhil', 'Hyderabad', 9848, 45000);
 
 
+
+INSERT INTO emp (emp_id, emp_name, emp_city,
+
+   emp_phone, emp_sal) VALUES(5,'uday', 'Hyderabad', 9848, 35000);
+
+
+
+INSERT INTO emp (emp_id, emp_name, emp_city,
+
+   emp_phone, emp_sal) VALUES(6,'deepak', 'Hyderabad', 9038, 20000);
+```
+
+16. View the table
+```sql
+SELECT * FROM emp;
+```
 
 #  Spark Integration with  Redshift and Kafka
 Spark can read and write data from anywhere.
@@ -72,8 +134,6 @@ Read write data from Redshift
 #Note- 
 - need redshift jdbc jar file
 - need aws credentials : AccessKey and AccessSecretKey
-
-
 
 
 
@@ -104,17 +164,14 @@ There are two ways to execute the end to end flow.
 
 eg. <C:\Users\admin\Desktop\spark\bin>spark-submit C:\Users\admin\Desktop\Integration\pyspark_redshift.py>
 
-
-- IPython
-
 ### Modular code
 - Create virtualenv
 - Install requirements `pip install -r requirements.txt`
 - Run Code `python pyspark_redshift.py`
 - Run Code `python pyspark_kafka.py`
 - Check output for all the visualization
+
 ### IPython
 Follow the instructions in the notebook `pyspark_redshift.ipynb`
 Follow the instructions in the notebook `pyspark_kafka.ipynb`
 
- 
