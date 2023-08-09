@@ -62,13 +62,5 @@ git clone https://github.com/vishalsingh17/KafkaRedshitDataPipeline
 cd KafkaRedshiftDataPipeline
 ```
 
-3. Change directory to src
-```
-cd src
-```
 
-4. Run the docker-compose
-```
-docker compose up
-```
 
