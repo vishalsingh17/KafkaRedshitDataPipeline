@@ -50,3 +50,25 @@ data storage and analysis.
 ● PySpark integration with Confluent Kafka
 
 ● PySpark integration with Amazon Redshift
+
+### Setup and Run Project
+1. Clone the repository
+```bash
+git clone https://github.com/vishalsingh17/KafkaRedshitDataPipeline
+```
+
+2. Change directory
+```
+cd KafkaRedshiftDataPipeline
+```
+
+3. Change directory to src
+```
+cd src
+```
+
+4. Run the docker-compose
+```
+docker compose up
+```
+
