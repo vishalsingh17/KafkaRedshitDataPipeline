@@ -62,5 +62,7 @@ git clone https://github.com/vishalsingh17/KafkaRedshitDataPipeline
 cd KafkaRedshiftDataPipeline
 ```
 
+3. Setting up the project
+[Setup](Setup.md)
 
 
