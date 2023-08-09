@@ -1,3 +1,60 @@
+1. Run the docker-compose
+```
+docker compose up
+```
+
+2. Get into bash shell of different containers
+```
+docker exec -it broker bash
+```
+3. Create a kafka topic
+```
+kafka-topics --create --topic airline-topic --bootstrap-server localhost:9092 --replication-factor 1
+```
+
+4. List all kafka topics
+```
+kafka-topics --list --bootstrap-server localhost:9092
+```
+
+5. Create a virtual environment
+```
+conda create -n env python==3.9 -y
+```
+
+6. Activate the environment
+```
+conda activate env
+```
+
+7. Install the required packages
+```
+pip install - r requirements.txt
+```
+
+8. Run hte pyspark_kafka notebook in notebook directory
+
+9. Consumer data sets
+```
+kafka-console-consumer --topic airline-topic --bootstrap-server localhost:9092 --from-beginning
+```
+
+. Store data in new topic
+```
+kafka-console-consumer --topic airline-shink --bootstrap-server localhost:9092 --from-beginning
+``` -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 #  Spark Integration with  Redshift and Kafka
 Spark can read and write data from anywhere.
