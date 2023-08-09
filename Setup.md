@@ -32,7 +32,7 @@ conda activate env
 pip install - r requirements.txt
 ```
 
-8. Run hte pyspark_kafka notebook in notebook directory
+8. Run the pyspark_kafka notebook in notebook directory
 
 9. Consumer data sets
 ```
