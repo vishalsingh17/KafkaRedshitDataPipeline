@@ -39,10 +39,10 @@ pip install - r requirements.txt
 kafka-console-consumer --topic airline-topic --bootstrap-server localhost:9092 --from-beginning
 ```
 
-. Store data in new topic
+10. Store data in new topic
 ```
 kafka-console-consumer --topic airline-shink --bootstrap-server localhost:9092 --from-beginning
-``` -->
+```
 
 
 
